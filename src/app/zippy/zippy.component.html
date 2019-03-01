@@ -1,0 +1,7 @@
+<button (click)="toggleView()">
+    {{title}}
+</button>
+<div *ngIf="showDetails">
+    <ng-content></ng-content>
+</div>
+

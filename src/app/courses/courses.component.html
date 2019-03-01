@@ -1,0 +1,12 @@
+<h1>Courses</h1>
+<input #input (keyup.enter)="onKeyUp(input.value)"/>
+<input [(ngModel)]="email" (keyup.enter)="onKeyup()"/>
+<p>{{email | capitalise}}</p>
+<p>
+  {{text | summary: 40 : 'tanvi' | capitalise}}
+</p>
+<button class="btn btn-primary" 
+  [class.active]="isActive"
+  (click)="handleClick()">
+  Save
+</button>
